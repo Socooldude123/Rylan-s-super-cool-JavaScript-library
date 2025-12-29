@@ -1,5 +1,5 @@
 This library is super easy to use! all you need to do is download the Engine.js file and put it into your project.
- next add <script src="Engine.js"> to your HTML file 
+next add <script src="Engine.js"> to your HTML file 
 (if you have The Engine.js file in a seperate folder, then dont forget to add the path to the Engine.js file inside the "src" tag in the <script> tag)
 also make shure to place the <script> tag above all your other scripts.
 
