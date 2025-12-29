@@ -1,0 +1,126 @@
+createBoard(width,height)
+  creates a canvas with a set width and height(in pixels).
+
+  EX: createBoard(400,400);
+
+moveBoard(x,y)
+  moves the canvas to a spot(in pixels) on the document.
+
+  EX: moveBoard(400,400);
+
+boardWidth() and boardHeight()
+  returns the width and height of the canvas.
+
+camera{x,y}
+  an object that holds the position(in pixels) of the camera.
+
+mouse{x,y,worldX,worldY,isClicking}
+  an object that holds the mouse position in relation to the screen with the "x" and "y" values. and the mouse position in relation to the camera with the "worldX" and "worldY" values.
+  it also holds a boolean value("isClicking") that returns true only if the user is clicking the mouse(RMB or LMB).
+
+Vector2(x,y)
+  a CLASS(don't forget to use the "new" keyword before calling "Vector2") that holds an "x" and "y" value. there are many methods for them.
+
+  EX: const vector = new Vector2(x,y);
+
+Vector2 methods
+
+  add(Vector2)
+    add 2 Vectors together.
+
+  sub(Vector2)
+    subtracts 2 Vectors.
+
+  mult(number)
+    multiplies a Vector by a given number.
+
+  div(number)
+    divides a Vector by a given number.
+
+  mag()
+    returns the magnitude of the Vector.
+
+  normalize()
+    normalizes the Vector(sets the magnitude to 1).
+
+  dist(Vector2)
+    returns the distance between 2 Vectors.
+
+playSound(sound)
+  plays a given sound from a url. 
+
+PI
+  a constant variable that returns pi.
+
+HALF_PI
+  a constant variable that returns pi/2.
+
+TWO_PI
+   a constant variable that returns pi * 2.
+
+rand(min, max)
+  returns a random number between a minimum and maximum value.
+
+exponent(num,power)
+  returns the given number "num" raised to the power of another number "power".
+
+dist(ax,ay,bx,by)
+  returns the distance between one point(ax,ay) and another point(bx,by)
+
+polarCoordinates(angle,distance,middleX,middleY)
+  oh boy...
+  converts polar coordinates into normal "x" and "y" coordinates. returns an object with an "x" and "y" value.
+
+  EX: const coordinates = polarCoordinates(angleInDegrees, radiusInPixels, middleOftheScreen.x,middleOftheScreen.y);
+      rect(coordinates.x, coordinates.y, 50, 50);
+
+degreesToRadians(degrees)
+  converts degrees into radians.
+
+radiansToDegrees(radians)
+  converts radians into degrees.
+
+lerp(value1,value2,amt)
+  calculates a number between two numbers at a specific increment(in %).
+
+useCamera(bool)
+  allows the user to drag their mouse to move the camera if true.
+
+useStroke(bool)
+  I think this doesn't need an explenation...
+
+background(color)
+  sets the background color.
+
+strokeSize(Size)
+  sets the stroke size.
+
+rect(x,y,width,height,angle,color)
+  draws a rectangle with a given x, y, width, height, angle(in degrees), and color.
+
+circle(x,y,diameter,color)
+  draws a circle with a given x, y, diameter, and color.
+
+line(x1,y1,x2,y2,color)
+  draws a line from one point(x1,y1) to another point(x2,y2)
+
+text(str,x,y,size,color,maxWidth)
+  draws text with a given string, x, y, size(in pixels), and maximum width.
+
+image(img,x,y,width,height,angle)
+  draws an image with a given image, x, y, width, height, and angle.
+  the image can not be a url, it has to be a variable that you have assigned as an image, and assign a url to it.
+
+  EX: const img = new Image();
+      img.src = "image.png";
+
+      image(img, 200, 200, 100, 100, 0);
+
+also there are variables that you should avoid. I will list them below.
+
+stro
+cam
+mouseStart
+
+thats all for now.
+if you find any bugs or have suggestions or complaints, please submit an issue on GitHub!
